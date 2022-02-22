@@ -3782,6 +3782,10 @@ class PlayState extends MusicBeatState
 			char.holdTimer = 0;
 		}
 
+if(!note.isSustainNote)
+			spawnNoteSplashOnNote(note);
+
+
 		if (SONG.needsVoices)
 			vocals.volume = 1;
 
